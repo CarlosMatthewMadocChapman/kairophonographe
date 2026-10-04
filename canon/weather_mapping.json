@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "mapping_version": "0.6.0",
+  "principle": "Weather contributes weighted musical forces; no single weather variable determines a composition.",
+  "variables": {
+    "temperature_c": {
+      "targets": ["tempo_bias_bpm","spectral_body","attack_character"],
+      "bands": [
+        {"max":5,"tempo_bias_bpm":-8,"spectral_body":"lean_clear","attack_character":"delicate"},
+        {"min":5,"max":15,"tempo_bias_bpm":-4,"spectral_body":"clear_wooded","attack_character":"light"},
+        {"min":15,"max":24,"tempo_bias_bpm":0,"spectral_body":"balanced","attack_character":"balanced"},
+        {"min":24,"max":30,"tempo_bias_bpm":4,"spectral_body":"warm_round","attack_character":"soft_dense"},
+        {"min":30,"tempo_bias_bpm":8,"spectral_body":"hot_granular","attack_character":"pressurized"}
+      ],
+      "limit": "Tempo bias is capped and combined with sound density, wind, precipitation and kinetic regime."
+    },
+    "humidity_pct": {
+      "targets": ["space_decay_s","layer_fusion","transient_softness"],
+      "bands": [
+        {"max":35,"space_decay_s":0.7,"layer_fusion":0.2,"transient_softness":0.15},
+        {"min":35,"max":65,"space_decay_s":1.2,"layer_fusion":0.4,"transient_softness":0.35},
+        {"min":65,"max":85,"space_decay_s":2.0,"layer_fusion":0.65,"transient_softness":0.6},
+        {"min":85,"space_decay_s":2.8,"layer_fusion":0.82,"transient_softness":0.78}
+      ],
+      "limit": "These values are compositional defaults, not acoustic predictions of a real site."
+    },
+    "pressure_hpa": {
+      "targets": ["harmonic_gravity","stability"],
+      "bands": [
+        {"max":1000,"harmonic_gravity":0.8,"stability":0.3,"behaviour":"deep_waiting"},
+        {"min":1000,"max":1018,"harmonic_gravity":0.55,"stability":0.6,"behaviour":"balanced"},
+        {"min":1018,"harmonic_gravity":0.35,"stability":0.82,"behaviour":"clear_vertical"}
+      ],
+      "trend": {"falling":"increase_slow_tension","stable":"preserve_harmonic_floor","rising":"increase_structural_clarity"}
+    },
+    "wind_speed_kmh": {
+      "targets": ["tempo_bias_bpm","stereo_motion","drone_modulation"],
+      "bands": [
+        {"max":5,"tempo_bias_bpm":0,"stereo_motion":0.1,"drone_modulation":0.1},
+        {"min":5,"max":15,"tempo_bias_bpm":2,"stereo_motion":0.35,"drone_modulation":0.3},
+        {"min":15,"max":30,"tempo_bias_bpm":5,"stereo_motion":0.65,"drone_modulation":0.6},
+        {"min":30,"tempo_bias_bpm":8,"stereo_motion":0.9,"drone_modulation":0.85}
+      ],
+      "gust_rule": "Gusts generate punctual spatial or dynamic events rather than a constant layer."
+    },
+    "precipitation_mm_h": {
+      "targets": ["tempo_bias_bpm","event_density","micro_rhythm"],
+      "bands": [
+        {"max":0.01,"tempo_bias_bpm":0,"event_density":0.0,"micro_rhythm":"none_from_precipitation"},
+        {"min":0.01,"max":1,"tempo_bias_bpm":2,"event_density":0.25,"micro_rhythm":"isolated_irregular"},
+        {"min":1,"max":4,"tempo_bias_bpm":5,"event_density":0.55,"micro_rhythm":"overlapping_irregular"},
+        {"min":4,"tempo_bias_bpm":8,"event_density":0.85,"micro_rhythm":"dense_multiscale"}
+      ],
+      "limit": "Precipitation may increase density without creating a conventional beat."
+    },
+    "cloud_cover_pct": {
+      "targets": ["spectral_brightness","filter_openness"],
+      "bands": [
+        {"max":25,"spectral_brightness":0.8,"filter_openness":0.85},
+        {"min":25,"max":70,"spectral_brightness":0.6,"filter_openness":0.65},
+        {"min":70,"spectral_brightness":0.38,"filter_openness":0.45}
+      ]
+    }
+  }
+}

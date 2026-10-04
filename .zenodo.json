@@ -1,0 +1,20 @@
+{
+  "title": "Kairophonographe",
+  "description": "Public, versioned artistic-research framework for translating situated environmental forces into reproducible musical decisions.",
+  "creators": [
+    {
+      "name": "Chapman, Carlos"
+    }
+  ],
+  "version": "0.6.0",
+  "publication_date": "2026-10-04",
+  "license": "MIT",
+  "keywords": [
+    "artistic research",
+    "generative music",
+    "environmental sound",
+    "weather",
+    "situated composition",
+    "field recording"
+  ]
+}

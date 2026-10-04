@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "mapping_version": "0.6.0",
+  "modes": {"0":"instrumental","1":"breath","2":"nonlexical_choir","3":"vocables_or_invented_phonemes","4":"fragmented_language_or_scansion","5":"clear_song"},
+  "activation": {
+    "default_mode": 0,
+    "bioacoustic_dense": {"candidate_modes":[1,2,3],"rule":"Preserve source contour, density and microtiming."},
+    "machine_recurrent": {"candidate_modes":[1,2,3,4],"rule":"Translate attacks and recurrence into mouth/throat/chest behaviour."},
+    "human_language_present": {"candidate_modes":[0,1,4,5],"rule":"Language use requires provenance and consent where applicable."}
+  },
+  "hard_rules": [
+    "No language is assigned from geographic location alone.",
+    "Nonlexical vocality must not be presented as an invented ancestral language.",
+    "Voice can remain absent even when vocal transformation is technically possible."
+  ]
+}

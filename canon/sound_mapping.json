@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "mapping_version": "0.6.0",
+  "principle": "Sound supplies temporal evidence. Recognizable source structure should survive transformation when possible.",
+  "source_families": {
+    "birds": {"music_roles":["punctuation","contour_seed","call_response"],"vocal_transmutation":{"eligible":true,"mode":"nonlexical_avian_human_choir","min_source_density":0.65}},
+    "insects": {"music_roles":["micro_rhythm","high_granular_canopy"],"vocal_transmutation":{"eligible":true,"mode":"granular_breath_choir","min_source_density":0.7}},
+    "water": {"music_roles":["flow","asymmetric_ostinato","continuous_horizontal_layer"],"vocal_transmutation":{"eligible":true,"mode":"liquid_vowel_flow","min_source_density":0.55}},
+    "wind": {"music_roles":["stereo_motion","breath","long_pressure_wave"],"vocal_transmutation":{"eligible":true,"mode":"choral_breath","min_source_density":0.55}},
+    "machines": {"music_roles":["pulse_seed","mechanical_microtiming","signal_pattern"],"vocal_transmutation":{"eligible":true,"mode":"mouth_collective","min_source_density":0.55}},
+    "human_steps": {"music_roles":["walking_pulse","body_meter","irregular_ostinato"],"vocal_transmutation":{"eligible":false,"mode":null,"min_source_density":null}},
+    "voices": {"music_roles":["social_density","phrase_length","counterpoint"],"vocal_transmutation":{"eligible":false,"mode":"preserve_or_anonymize_by_consent","min_source_density":null}},
+    "silence": {"music_roles":["negative_space","structural_cut","rarity"],"vocal_transmutation":{"eligible":false,"mode":null,"min_source_density":null}}
+  },
+  "transmutation_rule": "Transmute structure, not identity: preserve timing, contour, density or attack logic without pretending the source literally speaks."
+}

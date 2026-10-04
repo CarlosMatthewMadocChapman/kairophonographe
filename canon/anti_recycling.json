@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "mapping_version": "0.6.0",
+  "principle": "Reference examples must not become automatic scene templates.",
+  "minimum_novel_dimensions": 6,
+  "dimensions": [
+    "place_type",
+    "climate_regime",
+    "sound_regime",
+    "time_of_day",
+    "kinetic_regime",
+    "music_adn_gesture",
+    "resonance_palette",
+    "musical_structure",
+    "vocal_role"
+  ],
+  "quarantined_reference_motifs": [
+    "Karsaka",
+    "after-rain",
+    "wet limestone",
+    "source",
+    "spiral",
+    "channels",
+    "supermarket",
+    "checkout",
+    "neon",
+    "irrigation",
+    "light rain",
+    "dry urban rooftop",
+    "cables",
+    "antennas",
+    "cold ferry before dawn",
+    "library during heatwave",
+    "ceramics workshop at early morning"
+  ],
+  "reuse_allowed_when": [
+    "explicit_reprise",
+    "correction",
+    "comparison",
+    "requested_variation",
+    "regression_test"
+  ]
+}

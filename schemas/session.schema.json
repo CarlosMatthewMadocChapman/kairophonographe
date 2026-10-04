@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "session.schema.json",
+  "title": "Kairophonographe session",
+  "type": "object",
+  "required": ["session_id","engine_version","timestamp_local","input","provenance"],
+  "properties": {
+    "session_id":{"type":"string","minLength":1},
+    "engine_version":{"const":"0.6.0"},
+    "timestamp_local":{"type":"string","format":"date-time"},
+    "location": {
+      "type":"object",
+      "properties": {
+        "name":{"type":"string"},
+        "latitude":{"type":["number","null"],"minimum":-90,"maximum":90},
+        "longitude":{"type":["number","null"],"minimum":-180,"maximum":180},
+        "precision_m":{"type":["number","null"],"minimum":0},
+        "public_precision":{"enum":["exact","reduced","place_name_only","withheld"]}
+      },
+      "additionalProperties":false
+    },
+    "input": {
+      "type":"object",
+      "required":["weather","place","sound","time","season"],
+      "properties": {
+        "weather": {
+          "type":"object",
+          "properties": {
+            "temperature_c":{"type":["number","null"]},
+            "humidity_pct":{"type":["number","null"],"minimum":0,"maximum":100},
+            "pressure_hpa":{"type":["number","null"]},
+            "wind_speed_kmh":{"type":["number","null"],"minimum":0},
+            "wind_gust_kmh":{"type":["number","null"],"minimum":0},
+            "cloud_cover_pct":{"type":["number","null"],"minimum":0,"maximum":100},
+            "precipitation_mm_h":{"type":["number","null"],"minimum":0},
+            "pressure_trend":{"enum":["falling","stable","rising","unknown"]}
+          },
+          "additionalProperties":false
+        },
+        "place": {
+          "type":"object",
+          "required":["type","materials"],
+          "properties": {
+            "type":{"type":"string"},
+            "materials":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+            "geology":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+            "visual_forces":{"type":"array","items":{"type":"string"},"uniqueItems":true}
+          },
+          "additionalProperties":false
+        },
+        "sound": {
+          "type":"object",
+          "required":["families","event_density"],
+          "properties": {
+            "families":{"type":"array","items":{"type":"string"},"uniqueItems":true},
+            "event_density":{"type":"number","minimum":0,"maximum":1},
+            "periodicity":{"type":"number","minimum":0,"maximum":1},
+            "dynamic_variability":{"type":"number","minimum":0,"maximum":1}
+          },
+          "additionalProperties":false
+        },
+        "time": {
+          "type":"object",
+          "required":["local_hour"],
+          "properties": {
+            "local_hour":{"type":"integer","minimum":0,"maximum":23},
+            "solar_elevation_deg":{"type":["number","null"]}
+          },
+          "additionalProperties":false
+        },
+        "season":{"enum":["winter","spring","summer","autumn","unknown"]},
+        "vocality_allowed":{"type":"boolean","default":true}
+      },
+      "additionalProperties":false
+    },
+    "provenance": {
+      "type":"object",
+      "required":["weather","sound","place"],
+      "properties": {
+        "weather":{"enum":["measured","api","observed","estimated","simulated","user_provided"]},
+        "sound":{"enum":["recording","live_stream","observed","described","simulated"]},
+        "place":{"enum":["observed","image","map","described","simulated"]}
+      },
+      "additionalProperties":false
+    },
+    "intent":{"type":"string"},
+    "avoid":{"type":"array","items":{"type":"string"}}
+  },
+  "additionalProperties":false
+}

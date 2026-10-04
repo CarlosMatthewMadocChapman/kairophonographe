@@ -1,0 +1,17 @@
+{
+  "session_id": "example-la-rousselie-hot-storm-2100",
+  "engine_version": "0.6.0",
+  "timestamp_local": "2026-07-01T21:00:00+02:00",
+  "location": {"name":"La Rousselie, Périgord Noir, France","latitude":null,"longitude":null,"precision_m":null,"public_precision":"place_name_only"},
+  "input": {
+    "weather": {"temperature_c":32.2,"humidity_pct":78,"pressure_hpa":1002,"wind_speed_kmh":24,"wind_gust_kmh":46,"cloud_cover_pct":92,"precipitation_mm_h":5.5,"pressure_trend":"falling"},
+    "place": {"type":"agricultural","materials":["wood"],"geology":[],"visual_forces":["stored_heat","moving_vegetation","storm_threshold"]},
+    "sound": {"families":["wind","water","birds"],"event_density":0.82,"periodicity":0.34,"dynamic_variability":0.91},
+    "time": {"local_hour":21,"solar_elevation_deg":null},
+    "season": "summer",
+    "vocality_allowed": false
+  },
+  "provenance": {"weather":"user_provided","sound":"described","place":"described"},
+  "intent": "instrumental active thunderstorm transformation with additive architecture",
+  "avoid": ["generic storm soundtrack","EDM drop","rigid quantization","triumphant resolution"]
+}

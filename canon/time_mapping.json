@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "mapping_version": "0.6.0",
+  "principle": "Local time influences structural behaviour and register; it does not prescribe mood.",
+  "periods": [
+    {"name":"pre_dawn","hours":[0,1,2,3,4],"structural_mode":"rarity_and_preparation","register_bias":"low_sparse","density_bias":-0.18},
+    {"name":"dawn","hours":[5,6,7],"structural_mode":"emergence","register_bias":"opening_upward","density_bias":-0.06},
+    {"name":"morning","hours":[8,9,10,11],"structural_mode":"articulation","register_bias":"clear_mid_high","density_bias":0.04},
+    {"name":"midday","hours":[12,13,14],"structural_mode":"exposure","register_bias":"broad_clear","density_bias":0.1},
+    {"name":"afternoon","hours":[15,16,17],"structural_mode":"circulation","register_bias":"balanced_mobile","density_bias":0.08},
+    {"name":"dusk","hours":[18,19,20],"structural_mode":"transition","register_bias":"descending_warm","density_bias":0.0},
+    {"name":"night","hours":[21,22,23],"structural_mode":"depth_and_selectivity","register_bias":"low_with_rare_highs","density_bias":-0.1}
+  ],
+  "solar_override": "When measured solar elevation is available, it may replace clock-hour classification."
+}

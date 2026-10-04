@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "mapping_version": "0.6.0",
+  "principle": "Season biases orchestration and event persistence; it never assigns genre.",
+  "seasons": {
+    "winter": {"orchestration":["reduced_ensemble","exposed_resonance","long_air"],"density_bias":-0.12,"register":"low_clear"},
+    "spring": {"orchestration":["distributed_micro_events","responsive_layers","light_counterpoint"],"density_bias":0.08,"register":"mobile"},
+    "summer": {"orchestration":["sustained_body","high_micro_activity","warm_low_layer"],"density_bias":0.12,"register":"wide_warm"},
+    "autumn": {"orchestration":["layered_decay","friction","returning_motifs"],"density_bias":0.02,"register":"mid_low_textured"},
+    "unknown": {"orchestration":["neutral"],"density_bias":0.0,"register":"balanced"}
+  },
+  "hemisphere_rule": "Use the declared local season. Do not infer northern-hemisphere season from month alone when location metadata is absent."
+}

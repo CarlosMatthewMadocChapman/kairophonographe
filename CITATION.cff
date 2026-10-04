@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use Kairophonographe in research, artistic research or a published work, please cite this release."
+title: "Kairophonographe"
+type: software
+authors:
+  - family-names: "Chapman"
+    given-names: "Carlos"
+version: "0.6.0"
+date-released: "2026-10-04"
+repository-code: "https://github.com/CarlosMatthewMadocChapman/kairophonographe"
+license: MIT
+keywords:
+  - artistic research
+  - generative music
+  - environmental sound
+  - weather sonification
+  - situated composition
+  - field recording
+  - music information design

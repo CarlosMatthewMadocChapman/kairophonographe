@@ -1,0 +1,23 @@
+{
+  "session_id": "example-new-terrain-drydock-crosswind",
+  "engine_version": "0.6.0",
+  "music_spec": {
+    "tempo_bpm": 96.0,
+    "density": 0.73,
+    "kinetic_regime": "active_weather",
+    "structural_mode": "circulation",
+    "register_bias": "balanced_mobile",
+    "seasonal_orchestration": ["layered_decay","friction","returning_motifs"],
+    "space_decay_s": 1.2,
+    "stereo_motion": 0.65,
+    "harmonic_gravity": 0.35,
+    "spectral_brightness": 0.8,
+    "palettes": ["Métal doux","Pulses électriques","Drones graves"],
+    "timbres": ["filtered_ring","soft_scrape","tension_partial","dry_mass","short_reflection","low_body"],
+    "sound_roles": ["pulse_seed","mechanical_microtiming","signal_pattern","stereo_motion","breath","long_pressure_wave","walking_pulse","body_meter","irregular_ostinato"],
+    "vocality": "mouth_collective",
+    "source_preservation_rule": "Keep recognizable timing, contour, density or attack evidence from the situated input."
+  },
+  "anti_recycling": {"detected_reference_motifs":[],"requires_explicit_reprise":false},
+  "provenance": {"weather":"simulated","sound":"simulated","place":"simulated"}
+}

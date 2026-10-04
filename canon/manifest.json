@@ -1,0 +1,30 @@
+{
+  "project": "Kairophonographe",
+  "version": "0.6.0",
+  "release_date": "2026-10-04",
+  "status": "public_research_release",
+  "engine_contract": "deterministic_reference_specification",
+  "canonical_files": [
+    "weather_mapping.json",
+    "time_mapping.json",
+    "season_mapping.json",
+    "geology_mapping.json",
+    "sound_mapping.json",
+    "place_mapping.json",
+    "music_mapping.json",
+    "vocality_mapping.json",
+    "anti_recycling.json"
+  ],
+  "schemas": [
+    "session.schema.json",
+    "evaluation.schema.json",
+    "promotion.schema.json"
+  ],
+  "principles": [
+    "A place gives forces.",
+    "Mappings are explicit artistic rules, not physical causal laws.",
+    "Geography never assigns a presumed cultural style.",
+    "Examples do not govern future generations.",
+    "Measured, observed, estimated and simulated data remain distinguishable."
+  ]
+}

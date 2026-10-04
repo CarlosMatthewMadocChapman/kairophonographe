@@ -1,0 +1,23 @@
+{
+  "session_id": "example-la-rousselie-hot-storm-2100",
+  "engine_version": "0.6.0",
+  "music_spec": {
+    "tempo_bpm": 110.1,
+    "density": 0.91,
+    "kinetic_regime": "active_weather",
+    "structural_mode": "depth_and_selectivity",
+    "register_bias": "low_with_rare_highs",
+    "seasonal_orchestration": ["sustained_body","high_micro_activity","warm_low_layer"],
+    "space_decay_s": 2.0,
+    "stereo_motion": 0.65,
+    "harmonic_gravity": 0.55,
+    "spectral_brightness": 0.38,
+    "palettes": ["Pulsations de marche","Percussions sèches","Souffles"],
+    "timbres": ["dry_tap","grain","warm_resonance"],
+    "sound_roles": ["stereo_motion","breath","long_pressure_wave","flow","asymmetric_ostinato","continuous_horizontal_layer","punctuation","contour_seed","call_response"],
+    "vocality": "instrumental",
+    "source_preservation_rule": "Keep recognizable timing, contour, density or attack evidence from the situated input."
+  },
+  "anti_recycling": {"detected_reference_motifs":[],"requires_explicit_reprise":false},
+  "provenance": {"weather":"user_provided","sound":"described","place":"described"}
+}

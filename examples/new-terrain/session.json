@@ -1,0 +1,17 @@
+{
+  "session_id": "example-new-terrain-drydock-crosswind",
+  "engine_version": "0.6.0",
+  "timestamp_local": "2026-10-04T16:20:00+02:00",
+  "location": {"name":"Unnamed dry dock","latitude":null,"longitude":null,"precision_m":null,"public_precision":"withheld"},
+  "input": {
+    "weather": {"temperature_c":27.0,"humidity_pct":41,"pressure_hpa":1019,"wind_speed_kmh":29,"wind_gust_kmh":43,"cloud_cover_pct":18,"precipitation_mm_h":0.0,"pressure_trend":"rising"},
+    "place": {"type":"industrial","materials":["metal","concrete"],"geology":[],"visual_forces":["empty_hull_space","hard_shadow","crosswind","suspended_tools"]},
+    "sound": {"families":["machines","wind","human_steps"],"event_density":0.63,"periodicity":0.58,"dynamic_variability":0.66},
+    "time": {"local_hour":16,"solar_elevation_deg":null},
+    "season": "autumn",
+    "vocality_allowed": true
+  },
+  "provenance": {"weather":"simulated","sound":"simulated","place":"simulated"},
+  "intent": "new-terrain validation: reveal mechanical recurrence, connect crosswind and body-scale footsteps, avoid ambient default",
+  "avoid": ["cyberpunk cliché","techno four-on-the-floor","epic industrial trailer"]
+}

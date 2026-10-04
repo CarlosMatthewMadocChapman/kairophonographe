@@ -1,0 +1,23 @@
+{
+  "session_id": "example-karsaka-reference",
+  "engine_version": "0.6.0",
+  "music_spec": {
+    "tempo_bpm": 86.6,
+    "density": 0.69,
+    "kinetic_regime": "walking_ostinato",
+    "structural_mode": "transition",
+    "register_bias": "descending_warm",
+    "seasonal_orchestration": ["sustained_body","high_micro_activity","warm_low_layer"],
+    "space_decay_s": 2.0,
+    "stereo_motion": 0.35,
+    "harmonic_gravity": 0.55,
+    "spectral_brightness": 0.6,
+    "palettes": ["Pulsations de marche","Percussions sèches","Souffles"],
+    "timbres": ["matte_mineral_hits","porous_resonance","dry_scrape","dry_tap","grain","warm_resonance"],
+    "sound_roles": ["flow","asymmetric_ostinato","continuous_horizontal_layer","punctuation","contour_seed","call_response","walking_pulse","body_meter","irregular_ostinato"],
+    "vocality": "instrumental",
+    "source_preservation_rule": "Keep recognizable timing, contour, density or attack evidence from the situated input."
+  },
+  "anti_recycling": {"detected_reference_motifs":["Karsaka"],"requires_explicit_reprise":true},
+  "provenance": {"weather":"estimated","sound":"described","place":"observed"}
+}

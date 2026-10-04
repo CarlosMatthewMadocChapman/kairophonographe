@@ -1,0 +1,17 @@
+{
+  "session_id": "example-karsaka-reference",
+  "engine_version": "0.6.0",
+  "timestamp_local": "2026-06-15T18:30:00+02:00",
+  "location": {"name":"Karsaka","latitude":null,"longitude":null,"precision_m":null,"public_precision":"place_name_only"},
+  "input": {
+    "weather": {"temperature_c":19.0,"humidity_pct":84,"pressure_hpa":1014,"wind_speed_kmh":5,"wind_gust_kmh":9,"cloud_cover_pct":65,"precipitation_mm_h":0.0,"pressure_trend":"stable"},
+    "place": {"type":"agricultural","materials":["wood","limestone"],"geology":["limestone"],"visual_forces":["humid_ground","hidden_water","care_trace"]},
+    "sound": {"families":["water","birds","human_steps"],"event_density":0.48,"periodicity":0.44,"dynamic_variability":0.42},
+    "time": {"local_hour":18,"solar_elevation_deg":null},
+    "season": "summer",
+    "vocality_allowed": false
+  },
+  "provenance": {"weather":"estimated","sound":"described","place":"observed"},
+  "intent": "reference-only regression fixture",
+  "avoid": ["fantasy rural cliché","automatic pastoral flute"]
+}

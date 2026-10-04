@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "evaluation.schema.json",
+  "title": "Kairophonographe listening evaluation",
+  "type": "object",
+  "required": ["session_id","scores","decision"],
+  "properties": {
+    "session_id": {"type":"string"},
+    "scores": {
+      "type":"object",
+      "required":["source_retention","musical_value","singularity","causal_legibility","relisten_desire"],
+      "properties": {
+        "source_retention":{"type":"integer","minimum":1,"maximum":5},
+        "musical_value":{"type":"integer","minimum":1,"maximum":5},
+        "singularity":{"type":"integer","minimum":1,"maximum":5},
+        "causal_legibility":{"type":"integer","minimum":1,"maximum":5},
+        "relisten_desire":{"type":"integer","minimum":1,"maximum":5}
+      },
+      "additionalProperties":false
+    },
+    "notes":{"type":"array","items":{"type":"string"}},
+    "fertile_accident":{"type":["string","null"]},
+    "learned_rule_candidate":{"type":["string","null"]},
+    "decision":{"enum":["reject","revise","keep_experimental","promote_candidate"]}
+  },
+  "additionalProperties":false
+}

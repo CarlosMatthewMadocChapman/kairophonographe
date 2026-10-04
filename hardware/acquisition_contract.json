@@ -1,0 +1,21 @@
+{
+  "contract_version": "0.6.0",
+  "sample": {
+    "timestamp": "2026-10-04T13:00:00+02:00",
+    "sensor_id": "environment-01",
+    "signal": "temperature_c",
+    "value": 21.4,
+    "unit": "degC",
+    "source": "measured",
+    "quality": {
+      "status": "ok",
+      "confidence": 0.98
+    }
+  },
+  "rules": [
+    "never fabricate a missing measured value",
+    "preserve timestamp",
+    "preserve source/provenance",
+    "normalize units before translation"
+  ]
+}

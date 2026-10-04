@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "mapping_version": "0.6.0",
+  "principle": "Place type selects physical affordances and eligible palettes. Geography never selects a presumed cultural style.",
+  "place_types": {
+    "forest": {"forces":["distributed_micro_events","friction","depth"],"eligible_palettes":["Souffles","Bois clairs","Micro-événements","Stéréo mouvante"]},
+    "cave": {"forces":["reflection","depth","threshold"],"eligible_palettes":["Drones graves","Résonances de pierre","Réverbérations de tunnel","Rareté silencieuse"]},
+    "riverbank": {"forces":["horizontal_flow","layered_distance","continuous_motion"],"eligible_palettes":["Ostinatos liquides","Souffles","Polyphonies douces","Micro-événements"]},
+    "street": {"forces":["signal","passage","social_density"],"eligible_palettes":["Pulsations de marche","Motifs de signal","Polytextures humaines","Métal doux"]},
+    "station": {"forces":["waiting","routes","mechanical_recurrence"],"eligible_palettes":["Motifs de signal","Pulsations de marche","Réverbérations de tunnel","Scansions"]},
+    "coast": {"forces":["wide_depth","pressure_cycles","lateral_motion"],"eligible_palettes":["Souffles","Stéréo mouvante","Drones graves","Cordes frottées"]},
+    "workshop": {"forces":["tool_attacks","repetition","hand_scale"],"eligible_palettes":["Percussions sèches","Métal doux","Textures de papier","Mécanique vivante"]},
+    "domestic": {"forces":["proximity","small_gestures","interior_resonance"],"eligible_palettes":["Textures de papier","Bois clairs","Rareté silencieuse","Basses souples"]},
+    "agricultural": {"forces":["work_cycles","open_depth","soil_contact"],"eligible_palettes":["Pulsations de marche","Percussions sèches","Souffles","Résonances de pierre"]},
+    "industrial": {"forces":["machine_cycles","mass","signal"],"eligible_palettes":["Métal doux","Pulses électriques","Drones graves","Motifs de signal"]},
+    "other": {"forces":["derive_from_observed_material"],"eligible_palettes":["Micro-événements","Souffles","Rareté silencieuse"]}
+  }
+}

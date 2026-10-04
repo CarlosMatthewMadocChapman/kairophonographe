@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "promotion.schema.json",
+  "title": "Kairophonographe promotion record",
+  "type": "object",
+  "required": ["element","source","location","claim_class","tests","limitations","target_version","publication_decision"],
+  "properties": {
+    "element":{"type":"string","minLength":1},
+    "source":{"type":"string","minLength":1},
+    "location":{"type":"string"},
+    "claim_class":{"enum":["MEASURED","OBSERVED","ARTISTIC_RULE","LISTENING_RESULT","HYPOTHESIS","REFERENCE_EXAMPLE"]},
+    "tests":{"type":"array","items":{"type":"string"},"minItems":1},
+    "limitations":{"type":"array","items":{"type":"string"}},
+    "target_version":{"type":"string"},
+    "publication_decision":{"enum":["reject","hold","revise","promote"]}
+  },
+  "additionalProperties":false
+}

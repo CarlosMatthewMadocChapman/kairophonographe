@@ -1,0 +1,9 @@
+[project]
+name = "kairophonographe"
+version = "0.6.0"
+description = "Public reference engine for situated environmental-to-music mappings"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "scale": {
+    "min": 1,
+    "max": 5
+  },
+  "dimensions": {
+    "source_retention": "Source timing, contour, material or spatial evidence remains audible.",
+    "musical_value": "The result works as music, not only as a technical demonstration.",
+    "singularity": "The result belongs to this session rather than a generic style.",
+    "causal_legibility": "Major musical choices can be traced to documented input forces.",
+    "relisten_desire": "The piece supports renewed listening."
+  },
+  "promotion_gate": {
+    "mean_min": 3.8,
+    "source_retention_min": 4,
+    "singularity_min": 4
+  }
+}

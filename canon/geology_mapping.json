@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "mapping_version": "0.6.0",
+  "principle": "Geology contributes tactile timbral affordances, not historical or ethnic meaning.",
+  "materials": {
+    "limestone": {
+      "timbres": [
+        "matte_mineral_hits",
+        "porous_resonance",
+        "dry_scrape"
+      ],
+      "decay": "short_to_medium"
+    },
+    "granite": {
+      "timbres": [
+        "hard_low_impact",
+        "bright_edge",
+        "dense_resonance"
+      ],
+      "decay": "medium"
+    },
+    "basalt": {
+      "timbres": [
+        "dark_dense_impact",
+        "low_bowed_resonance",
+        "rough_grain"
+      ],
+      "decay": "short_to_medium"
+    },
+    "clay": {
+      "timbres": [
+        "rounded_hollow_knock",
+        "skinlike_damping",
+        "earthy_low_mid"
+      ],
+      "decay": "short"
+    },
+    "sand": {
+      "timbres": [
+        "grain",
+        "friction",
+        "soft_transient_cloud"
+      ],
+      "decay": "very_short"
+    },
+    "concrete": {
+      "timbres": [
+        "dry_mass",
+        "short_reflection",
+        "low_body"
+      ],
+      "decay": "short"
+    },
+    "metal": {
+      "timbres": [
+        "filtered_ring",
+        "soft_scrape",
+        "tension_partial"
+      ],
+      "decay": "variable"
+    },
+    "wood": {
+      "timbres": [
+        "dry_tap",
+        "grain",
+        "warm_resonance"
+      ],
+      "decay": "short"
+    },
+    "unknown": {
+      "timbres": [
+        "neutral_tactile_layer"
+      ],
+      "decay": "contextual"
+    }
+  }
+}

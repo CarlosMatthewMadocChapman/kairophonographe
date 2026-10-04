@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "mapping_version": "0.6.0",
+  "base_tempo_bpm": 84,
+  "tempo_limits_bpm": [
+    48,
+    148
+  ],
+  "music_adn_gestures": {
+    "revelation": [
+      "reveal",
+      "clarify",
+      "make_weak_audible",
+      "give_contour"
+    ],
+    "depth": [
+      "root",
+      "densify",
+      "stratify",
+      "make_memory",
+      "give_floor"
+    ],
+    "relation": [
+      "connect",
+      "reciprocate",
+      "circulate",
+      "weave",
+      "cohabit"
+    ],
+    "temporal": [
+      "stretch",
+      "condense",
+      "transition",
+      "fragment",
+      "relaunch"
+    ],
+    "care": [
+      "make_breathable",
+      "rarify",
+      "stabilize",
+      "protect_silence",
+      "unclutter"
+    ]
+  },
+  "palettes": [
+    "Souffles",
+    "Polyphonies douces",
+    "Drones graves",
+    "Grains granulaires",
+    "Percussions sèches",
+    "Percussions humides",
+    "Pulsations de marche",
+    "Halos humides",
+    "Voix ouvertes",
+    "Scansions",
+    "Basses souples",
+    "Verre harmonique",
+    "Métal doux",
+    "Cordes frottées",
+    "Bois clairs",
+    "Textures de papier",
+    "Résonances de pierre",
+    "Ostinatos liquides",
+    "Stéréo mouvante",
+    "Rareté silencieuse",
+    "Polytextures humaines",
+    "Pulses électriques",
+    "Chaleur granuleuse",
+    "Matière nocturne",
+    "Langues mêlées / vocables",
+    "Bourdons souterrains",
+    "Motifs de signal",
+    "Tressage modal",
+    "Réverbérations de tunnel",
+    "Micro-événements"
+  ],
+  "kinetic_regimes": {
+    "contemplative_breathed": {
+      "tempo_range": [
+        48,
+        76
+      ],
+      "pulse": "weak_or_breath_led"
+    },
+    "walking_ostinato": {
+      "tempo_range": [
+        68,
+        104
+      ],
+      "pulse": "embodied_irregular"
+    },
+    "living_mechanical": {
+      "tempo_range": [
+        78,
+        124
+      ],
+      "pulse": "recurrent_with_microtiming"
+    },
+    "social_polyrhythmic": {
+      "tempo_range": [
+        82,
+        132
+      ],
+      "pulse": "multi_layer"
+    },
+    "active_weather": {
+      "tempo_range": [
+        72,
+        136
+      ],
+      "pulse": "event_driven_elastic"
+    },
+    "organic_dance": {
+      "tempo_range": [
+        92,
+        138
+      ],
+      "pulse": "bodily_non_grid"
+    },
+    "montage_rupture": {
+      "tempo_range": [
+        56,
+        140
+      ],
+      "pulse": "discontinuous"
+    },
+    "place_song": {
+      "tempo_range": [
+        58,
+        122
+      ],
+      "pulse": "phrase_led"
+    }
+  },
+  "variation_functions": {
+    "source_calibration": "Preserve source recognizability and temporal evidence.",
+    "weather_transformation": "Let meteorological change reorganize density, space and tension.",
+    "music_adn_synthesis": "Fuse source structures into an autonomous composition while retaining traceability."
+  }
+}
